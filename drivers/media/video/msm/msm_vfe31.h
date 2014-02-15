@@ -293,6 +293,7 @@ enum  VFE_STATE {
 #define V31_SYNC_TIMER_SETTING    104
 #define V31_ASYNC_TIMER_SETTING   105
 #define V31_LIVESHOT              106
+#define V31_CMD_MAX               107
 
 #define V31_CAMIF_OFF             0x000001E4
 #define V31_CAMIF_LEN             32
