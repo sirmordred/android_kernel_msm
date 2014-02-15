@@ -1758,6 +1758,9 @@ static int vfe31_proc_general(struct msm_vfe31_cmd *cmd)
 		break;
 
 	default: {
+		if (cmd->id < 0 || cmd->id > VFE_CMD_MAX)
+			return -EINVAL;
+
 		if (cmd->length != vfe31_cmd[cmd->id].length)
 			return -EINVAL;
 
